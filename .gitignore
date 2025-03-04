@@ -1,0 +1,65 @@
+# MacOS system files
+.DS_Store
+
+# CodeIgniter cache and logs
+application/cache/*
+!application/cache/index.html
+
+application/logs/*
+!application/logs/index.html
+
+# Prevent accidentally exposing security files
+!application/*/.htaccess
+
+# Dependency files
+composer.lock
+/vendor/
+
+# Test database and test-related files
+tests/mocks/database/ci_test.sqlite
+/tests/tests/
+/tests/results/
+
+# User Guide build artifacts
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+
+# IDE and editor-specific files
+/nbproject/
+.idea/
+*.iml
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# Node.js dependencies (if Bootstrap is customized with npm)
+node_modules/
+package-lock.json
+
+# Compiled assets
+/public/assets/css/*.map
+/public/assets/js/*.map
+/public/assets/fonts/
+/public/assets/vendor/
+
+# Environment and configuration files
+.env
+.env.*
+config.php
+
+# Backup and temporary files
+*.bak
+*.tmp
+*.log
+
+# Minified and compiled Bootstrap files (if not part of source control)
+/bootstrap/dist/
+/bootstrap/node_modules/
